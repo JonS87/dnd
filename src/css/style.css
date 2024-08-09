@@ -210,14 +210,15 @@ input {
 .issue-row {
 	position: relative;
 	z-index: 1;
-	pointer-events: auto;
 	cursor: pointer;
+	width: 264px;
 }
 
 .issue-row.dragged {
-	position: absolute;
+	position: fixed;
 	z-index: 999;
 	cursor: grabbing !important;
+	pointer-events: none;
 }
 
 .issue-row .delete-card {
